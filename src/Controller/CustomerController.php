@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 class CustomerController extends AbstractApiController
 {
     /**
-     * @Route("/api/v1/customers", methods="GET")
+     * INDEX ACTION
      */
     public function indexAction(Request $request): Response
     {
@@ -22,7 +22,7 @@ class CustomerController extends AbstractApiController
     }
 
     /**
-     * @Route("/api/v1/customers/create", methods="POST")
+     * CREATE ACTION
      */
     public function createAction(Request $request): Response
     {
@@ -46,7 +46,7 @@ class CustomerController extends AbstractApiController
     }
 
     /**
-     * @Route("/api/v1/customers/edit/{id}", methods="PUT")
+     * EDIT ACTION
      */
     public function editAction($id = null, Request $request): Response
     {
@@ -77,7 +77,7 @@ class CustomerController extends AbstractApiController
     }
 
     /**
-     * @Route("/api/v1/customers/delete/{id}", methods="DELETE")
+     * DELETE ACTION
      */
     public function deleteAction($id = null): Response
     {
