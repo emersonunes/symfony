@@ -25,18 +25,26 @@ composer req symfony/apache-pack
 
 ## API ENDPOINTS
 
-**CREATE CUSTOMERS** -> method: POST
+In this application you can CREATE, READ, UPDATE and DELETE CUSTOMERS
+
+## CREATE CUSTOMERS(method: POST)
+
 http://symfony.local/api/v1/customers/create
 PAYLOAD:
 -Email (type email, required)
 -Phone Number (type string, required)
-**RETRIEVE CUSTOMERS LIST** -> method: GET
+
+## RETRIEVE CUSTOMERS LIST(method: GET)
+
 http://symfony.local/api/v1/customers
 
-**EDIT CUSTOMER** -> method: PUT
+## EDIT CUSTOMER(method: PUT)
+
 http://symfony.local/api/v1/customers/edit/{id}
 PAYLOAD:
 -Email (type email, required)
 -Phone Number (type string, required)
-**DELETE CUSTOMER** -> method: DELETE
+
+## DELETE CUSTOMER (method: DELETE)
+
 http://symfony.local/api/v1/customers/delete/{id}
